@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Static C Compiler</title>
+  <link rel="stylesheet" href="/styles/main.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="topbar">
+      <h1>Static C Compiler</h1>
+      <div class="controls">
+        <button id="runBtn" class="run-btn" type="button">RUN</button>
+        <button id="themeBtn" class="theme-btn" type="button">Light</button>
+      </div>
+    </header>
+
+    <main class="split-layout">
+      <section class="panel editor-panel">
+        <h2>Code Editor</h2>
+        <textarea id="codeInput" spellcheck="false">#include <stdio.h>
+
+int main() {
+    printf("Hello, Static C Compiler!\\n");
+    return 0;
+}</textarea>
+      </section>
+
+      <section class="panel output-panel">
+        <h2>Output</h2>
+        <pre id="outputBox" class="output neutral">Click RUN to execute your program.</pre>
+      </section>
+    </main>
+  </div>
+
+  <script src="/runner.js"></script>
+</body>
+</html>
