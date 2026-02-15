@@ -1,0 +1,3 @@
+node_modules
+workspace/source/program.c
+workspace/binaries/program.out
