@@ -14,7 +14,7 @@ app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "../client/public/index.html"));
 });
 
-const PORT = 5234;
+const PORT = process.env.PORT || 5234;
 const HOST = "0.0.0.0";
 
 app.listen(PORT, HOST, () => {
